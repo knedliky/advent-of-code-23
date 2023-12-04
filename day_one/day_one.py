@@ -1,3 +1,6 @@
+import numpy as np
+
+
 def part_one(data: str) -> int:
     number = ""
     for i in data:
