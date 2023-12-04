@@ -1,9 +1,3 @@
-import numpy as np
-
-with open("./data.txt", "r") as f:
-    strings = f.read().splitlines()
-
-
 def part_one(data: str) -> int:
     number = ""
     for i in data:
@@ -48,6 +42,9 @@ def part_two(data: str) -> int:
 
     return 0 if number == "" else int(number)
 
+
+with open("./data.txt", "r") as f:
+    strings = f.read().splitlines()
 
 print("Answer to part one: ", np.sum([part_one(string) for string in strings]))
 print("Answer to part two: ", np.sum([part_two(string) for string in strings]))
